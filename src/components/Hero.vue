@@ -1,17 +1,16 @@
 <template>
     <div class="hero">
-        <div class="hero-info">
-            <div class="hero-info-text">
-                <h2 class="hero-info__title">Luxury homeware for people who love timeless design quality</h2>
-                <span class="hero-info__desc">Shop the new Spring 2022 collection today</span>
-            </div>
-            <a href="" class="hero-info-link">View collection</a>
-        </div>
+        
+            <HeroInfo
+            title="Luxury homeware for people who love timeless design quality"
+            description="Shop the new Spring 2022 collection today"
+            link="#"/>
+        
     </div>
 </template>
 
 <script setup>
-
+import HeroInfo from './HeroInfo.vue';
 </script>
 
 <style lang="scss" scoped>
