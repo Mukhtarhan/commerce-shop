@@ -82,7 +82,7 @@ const menu = [
         }
     }
     &-logo {
-        color: #22202E;
+        color: var(--black);
         font-size: 24px;
         text-decoration: none;
         &:hover {

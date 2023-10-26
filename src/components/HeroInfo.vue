@@ -78,9 +78,6 @@ const props = defineProps({
             width: 170px;
             cursor: pointer;
             text-decoration: none;
-            &:hover {
-                
-            }
         }
     } 
 }
