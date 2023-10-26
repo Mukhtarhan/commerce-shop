@@ -1,8 +1,8 @@
 
 <template>
-<div>
-  <router-view />
-</div>
+  <div>
+    <router-view />
+  </div>
 </template>
 
 <style lang="scss">
