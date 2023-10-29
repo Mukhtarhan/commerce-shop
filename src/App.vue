@@ -1,10 +1,17 @@
 
 <template>
-  <div>
+  <div class="container">
+    <Header />
     <router-view />
+    <Footer />
   </div>
 </template>
 
 <style lang="scss">
 @import '@/assets/styles/global.scss'
 </style>
+
+<script setup>
+import Header from '@/components/Layout/Header.vue';
+import Footer from './components/Layout/Footer.vue';
+</script>

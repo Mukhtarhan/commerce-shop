@@ -1,7 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 
 :root {
-    --black: #22202E;
+    --primary: #22202E;
+    --satoshi: "Satoshi", sans-serif;
+    --gray: #726e8d;
+    --lightgray: #5b5676;
 }
 
 
@@ -23,4 +26,10 @@ img {
   max-width: 1440px;
   margin: auto;
    
+}
+.input-text {
+  height: 56px;
+  padding: 0 32px;
+  font-size: 16px;
+  border: none;
 }

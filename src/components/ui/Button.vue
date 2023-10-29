@@ -46,7 +46,7 @@ const props = defineProps({
     }
 
     &--primary {
-        background: var(--black);
+        background: var(--primary);
         color: #fff;
     }
 
@@ -57,6 +57,10 @@ const props = defineProps({
 
     &--lightgray {
         background: #F9F9F9;
-        color: #2A254B;
+        color: var(--primary);
+    }
+    &--white {
+        background: #fff;
+        color: var(--primary);
     }
 }</style>

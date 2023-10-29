@@ -9,7 +9,7 @@
             :price="product.price"/>
         </div>
         <div class="products-link">
-          <UIButton colorLink="lightgray" type="link" to="/" class="products-link">
+          <UIButton color="lightgray" type="link" to="/" class="products-link">
             View collection
           </UIButton>
         </div>
@@ -19,6 +19,7 @@
 </template>
 
 <script setup>
+import UIButton from './ui/Button.vue';
 import ProductCard from './ProductCard.vue';
 import { ref } from 'vue';
 const products =ref([
