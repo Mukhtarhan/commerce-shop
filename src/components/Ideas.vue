@@ -7,7 +7,6 @@
     background="#2A254B"
     color-title="#fff"
     color-description="#fff" 
-    color-link="#fff"
     bg-btn="#5B5676"/>
     <img src="room.jpg" alt="room">
   </div>

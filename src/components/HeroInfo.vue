@@ -8,12 +8,9 @@
         <span class="hero-info__desc"
         :style="{ color: colorDescription }">{{ description }}</span>
         </div>
-        <UIButton color="secondary" type="link" to="/">
+        <UIButton :color="colorLink || 'secondary'" type="link" to="/">
             View collection
-        </UIButton>
-        <!-- <a :href="link" 
-        :style="{ color: colorLink, backgroundColor: bgBtn}"
-        class="hero-info-link">View collection</a> -->
+        </UIButton> 
     </div>
 </template>
 
@@ -46,7 +43,7 @@ const props = defineProps({
     },
     colorLink: {
         type: String,
-        default: '#5B5676'
+        required: false
     },
     bgBtn: {
         type: String,

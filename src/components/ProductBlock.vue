@@ -8,7 +8,13 @@
             :title="product.title"
             :price="product.price"/>
         </div>
-        <router-link to="" class="products-link">View collection</router-link>
+        <div class="products-link">
+          <UIButton colorLink="lightgray" type="link" to="/" class="products-link">
+            View collection
+          </UIButton>
+        </div>
+         
+
     </div>
 </template>
 
@@ -54,9 +60,8 @@ const products =ref([
         margin-bottom: 56px;
     }
     &-link {
-        display: block;
         text-align: center;
-        color: #2A254B;
+        
     }
 }
 </style>
