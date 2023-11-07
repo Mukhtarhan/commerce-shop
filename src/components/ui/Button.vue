@@ -40,7 +40,7 @@ const props = defineProps({
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
-
+    white-space: nowrap;
     &:hover {
         opacity: 0.8;
     }

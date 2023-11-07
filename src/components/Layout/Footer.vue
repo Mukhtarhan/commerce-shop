@@ -80,10 +80,20 @@ import SubscribeForm from '../SubscribeForm.vue';
         column-gap: 110px;
         border-bottom: 1px solid #4E4D93;
         padding-bottom: 48px;
+        @media screen and (max-width: 1150px) {
+            column-gap: 10px;
+            grid-template-columns: 450px 1fr;
+        }
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     &-menu {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
         &-title {
             display: block;
             margin-bottom: 12px;

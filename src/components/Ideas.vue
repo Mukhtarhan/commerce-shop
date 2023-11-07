@@ -8,7 +8,7 @@
     color-title="#fff"
     color-description="#fff" 
     bg-btn="#5B5676"/>
-    <img src="room.jpg" alt="room">
+    <img src="room.jpg" alt="room" class="ideas-image">
   </div>
 
 </template>
@@ -24,5 +24,9 @@ import HeroInfo from '@/components/HeroInfo.vue';
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 16px;
+    &-image {
+      height: 100%;
+      object-fit: cover;
+    }
 }
 </style>

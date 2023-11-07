@@ -53,9 +53,14 @@ const aboutBrands = [
         display: grid;
         grid-template-columns: repeat(4, 210px);
         justify-content: space-between;
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
     }
     &-element {
         background: var(--Light-Grey, #F9F9F9);
+        padding: 48px;
         &-img {
             display: block;
             margin-bottom: 12px;
