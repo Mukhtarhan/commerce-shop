@@ -9,12 +9,10 @@
             :price="product.price"/>
         </div>
         <div class="products-link">
-          <UIButton color="lightgray" type="link" to="/" class="products-link">
+          <UIButton :mobile-full-width="true" color="lightgray" type="link" to="/" class="products-link">
             View collection
           </UIButton>
         </div>
-         
-
     </div>
 </template>
 
@@ -52,7 +50,7 @@ const products =ref([
 
 <style lang="scss" scoped>
 .products {
-    padding: 0 80px;
+    padding: 0 56px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
@@ -60,6 +58,9 @@ const products =ref([
     @media screen and (max-width: 1024px) {
       grid-template-columns: repeat(2, 1fr);
       row-gap: 20px;
+    }
+    @media screen and (max-width: 767px) {
+      
     }
     &-container {
         margin-bottom: 56px;

@@ -37,10 +37,16 @@ const props = defineProps({
         font-size: 20px;
         line-height: 28px;
         margin-bottom: 8px;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
     }
     &-price {
         display: block;
         font-size: 18px;
+        @media screen and (max-width: 767px) {
+            font-size: 16px;
+        }
     }
 }
 </style>

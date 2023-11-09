@@ -1,11 +1,28 @@
 <template>
     <button v-if="type === 'button'"
-        :class="['btn', { 'btn--primary': color === 'primary', 'btn--lightgray': color === 'lightgray', 'btn--secondary': color === 'secondary' }]">
+        :class="[
+            'btn', 
+            { 'btn--primary': color === 'primary', 
+            'btn--lightgray': color === 'lightgray', 
+            'btn--secondary': color === 'secondary',
+            'btn--fullwidth': mobileFullWidth,
+            }
+        ]"
+    >
         <slot />
     </button>
     <router-link v-else
-        :class="['btn', { 'btn--primary': color === 'primary', 'btn--lightgray': color === 'lightgray', 'btn--secondary': color === 'secondary' }]"
-        :to="to">
+        :class="[
+            'btn',
+            {
+                'btn--primary': color === 'primary',
+                'btn--lightgray': color === 'lightgray',
+                'btn--secondary': color === 'secondary',
+                'btn--fullwidth': mobileFullWidth,
+            }
+        ]"
+        :to="to"
+    >
         <slot />
     </router-link>
 </template>
@@ -26,6 +43,10 @@ const props = defineProps({
     color: {
         type: String,
         default: 'primary'
+    },
+    mobileFullWidth: {
+        type: Boolean,
+        default: false
     }
 })
 </script>
@@ -35,12 +56,16 @@ const props = defineProps({
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 56px;
+    min-height: 56px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
     white-space: nowrap;
+    @media screen and (max-width: 767px) {
+        padding: 0 15px;
+        font-size: 15px;
+    }
     &:hover {
         opacity: 0.8;
     }
@@ -62,5 +87,10 @@ const props = defineProps({
     &--white {
         background: #fff;
         color: var(--primary);
+    }
+    &--fullwidth {
+        @media screen and (max-width: 767px) {
+            width: 100%;
+        }
     }
 }</style>
