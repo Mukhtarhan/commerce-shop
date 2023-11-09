@@ -59,9 +59,9 @@ const aboutBrands = [
     }
     &-elements {
         display: grid;
-        grid-template-columns: repeat(4, 210px);
+        grid-template-columns: repeat(4, 1fr);
         justify-content: space-between;
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1150px) {
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }

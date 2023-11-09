@@ -74,9 +74,7 @@ const props = defineProps({
             padding: 47px 0 32px 0;
             min-height: 0;
         }
-        &__image {
-            margin-top: 32px;
-        }
+    
         &-text {
             @media screen and (max-width: 767px) {
                 margin-bottom: 32px;

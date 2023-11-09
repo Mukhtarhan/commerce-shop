@@ -6,7 +6,7 @@
       colorLink="lightgray"
       link="#"
     />
-    <img src="/img/Hero.png" alt="" class="hero-info__image" />
+    <img src="/img/Hero.png" alt="" class="hero-image" />
   </div>
 </template>
 
@@ -29,6 +29,14 @@ import HeroInfo from "@/components/HeroInfo.vue";
     background: transparent;
     padding-right: 0;
     display: block;
+  }
+  &-image {
+    max-width: 100%;
+    margin-top: 32px;
+    display: none;
+    @media screen and (max-width: 767px){
+        display: block;
+    }
   }
   &-info {
     background: #fff;
